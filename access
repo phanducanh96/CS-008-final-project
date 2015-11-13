@@ -1,0 +1,20 @@
+<?php
+include ('top.php');
+?>
+<?php
+print "<ol>";
+foreach ($records as $oneRecord) {
+    if ($oneRecord[1] == "access"){
+        if ($oneRecord[0] == $accessId) {
+            print "\n\t<li>";
+            print "<h1>".$oneRecord[2]."</h1>";
+            print '<img src="' . $oneRecord[8] . '">';
+            print "<figcaption>".$oneRecord[7]."</figcaption>";
+            print "<p>".$oneRecord[9]."</p>";
+            print "\n\t</li>";
+    }
+    }
+}
+
+print "</ol>";
+?>
