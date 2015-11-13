@@ -1,0 +1,21 @@
+<?php
+include ('top.php');
+?>
+<?php
+print "<ol>";
+foreach ($records as $oneRecord) {
+    if ($oneRecord[1] == "access"){
+        if ($oneRecord[0] != "") { 
+            print "\n\t<li>";
+            print "<a href='access.php?id=".$oneRecord[0]."'>".$oneRecord[2]."</a>";
+        print "\n\t</li>";
+    }
+    }
+}
+
+print "</ol>";
+
+if ($debug)
+    print "<p>End of processing.</p>\n";
+?>
+</html>   
