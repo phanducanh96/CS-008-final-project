@@ -1,0 +1,20 @@
+<?php
+include ('top.php');
+?>
+    <?php
+    print "<ol>";
+    foreach($records as $oneRecord) {
+        if($oneRecord[1] == "upcoming"){
+            if($oneRecord[0] == $upcomingId) {
+                print "\n\t<li>";
+                print "<h1>".$oneRecord[1]."</h1>";
+                print "<p>".$oneRecord[2]."</p>";
+                print "\n\t</li>";
+            }
+        }
+    }
+    print "<ol>";
+?>
+</article>
+</body>
+</html>
