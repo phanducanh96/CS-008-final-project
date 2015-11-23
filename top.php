@@ -69,12 +69,6 @@
     if (isset($_GET["debug"])) {
         $debug = true;
     }
-    if (isset($_GET["id"])) {
-    $showId = (int) $_GET["id"];
-}
-if (isset($_GET["id"])) {
-    $upcomingId = (int) $_GET["id"];
-}
     $myFileName = "theatre";
     $fileExt = ".csv";
     $filename = $myFileName . $fileExt;
