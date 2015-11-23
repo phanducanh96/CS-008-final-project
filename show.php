@@ -85,23 +85,3 @@ include("footer.php");
 ?>
 </body>
 </html>
-print "<h2>Upcoming Show:</h2>";
-print "<ol>";
-foreach ($records as $oneRecord) {
-    if ($oneRecord[1] == "upcoming"){
-        if ($oneRecord[0] != "upcomingId") {
-            print "\n\t<li>";
-            print "<a href='upcoming.php?id=" . $oneRecord[0] . "'>" . $oneRecord[2] . "</a>";
-            print "\n\t</li>";
-        }
-    }
-}
-print "</ol>";
-?>
-</article>
-<hr>
-<?php
-include("footer.php");
-?>
-</body>
-</html>
